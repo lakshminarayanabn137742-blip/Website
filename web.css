@@ -1,0 +1,375 @@
+/* ================================
+   1. NAVBAR & HEADER STYLES
+   ================================ */
+.navbar-custom {
+    background: #D9FF6E;
+}
+
+.brand-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #3d3f2b;
+    color: white;
+    border-radius: 50%;
+    padding: 6px;
+    font-size: 20px;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #374521 !important;
+    margin-left: 20px;
+}
+
+.nav-link:hover {
+    color: black !important;
+}
+
+
+
+/* ================================
+   2. HERO SECTION
+   ================================ */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left-img,
+.right-img {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.left-img {
+    background-image: url("Images/banner1.avif");
+}
+
+.right-img {
+    background-image: url("Images/rightbanner.jpeg");
+}
+
+/* Hero Center Card */
+.center-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    padding: 35px;
+    text-align: center;
+    background: #f9f9e6;
+    border-radius: 6px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.25);
+}
+
+.center-card h2 {
+    font-size: 2.2rem;
+    color: #3a3f2e;
+    margin-bottom: 18px;
+}
+
+.center-card p {
+    font-size: 0.95rem;
+    color: #2f3326;
+}
+
+.btn-custom {
+    border: 1px solid #50692c;
+    color: #50692c;
+    padding: 8px 24px;
+    background: #efffb2;
+    transition: 0.3s;
+}
+
+.btn-custom:hover {
+    background: #50692c;
+    color: #fff;
+}
+
+
+
+/* ================================
+   3. ABOUT SECTION
+   ================================ */
+.about-left {
+    background-image: url("Images/rightbanner.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.about-right {
+    background: #f7f6e9;
+    padding: 80px 60px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-right h1 {
+    font-size: 60px;
+    color: #3a4224;
+}
+
+.about-right p {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 520px;
+}
+
+.small-img {
+    width: 280px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+
+
+/* ================================
+   4. SERVICES SECTION
+   ================================ */
+.services-left {
+    background: #eef2d3;
+    padding: 80px 40px;
+}
+
+.service-card {
+    background: #f4f6e2;
+    padding: 15px 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+
+
+/* ================================
+   5. MOVING GREEN STRIP (ANIMATION)
+   ================================ */
+.green-strip {
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px solid #6a7a44;
+    border-bottom: 1px solid #6a7a44;
+    background: #faf9ef;
+    padding: 10px 0;
+    white-space: nowrap;
+}
+
+.scroll-content {
+    display: inline-block;
+    animation: scroll-left 12s linear infinite;
+    font-size: 32px;
+    color: #3a4224;
+}
+
+.scroll-content span {
+    margin: 0 40px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.scroll-content i {
+    background: #50692c;
+    padding: 6px;
+    color: white;
+    border-radius: 50%;
+}
+
+/* Scroll animation */
+@keyframes scroll-left {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+
+
+/* ================================
+   6. FUTURE SECTION
+   ================================ */
+.future-section {
+    width: 100%;
+}
+
+.future-row {
+    display: flex;
+    height: 100vh;
+}
+
+.future-left {
+    background: #faf9ef;
+    padding: 120px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.future-left h1 {
+    font-size: 70px;
+    color: #3a4224;
+    text-align: center;
+}
+
+.future-left p {
+    font-size: 20px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.future-btn {
+    background: #d9ff6e;
+    border: 1px solid #3a4224;
+    width: 135px;
+    height: 45px;
+}
+
+.future-btn:hover {
+    background: #3a4224;
+    color: white;
+}
+
+.future-right {
+    background: #e4ff80;
+    padding: 120px 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.future-right p {
+    max-width: 500px;
+    font-size: 22px;
+    text-align: center;
+}
+
+
+
+/* ================================
+   7. PARTNERS SECTION
+   ================================ */
+.partners-section {
+    background: #eef2d3;
+    padding: 120px 0;
+}
+
+.partners-title {
+    font-size: 60px;
+    color: #3a4224;
+}
+
+.partner-box {
+    border: 2px solid #3a4224;
+    padding: 12px 25px;
+    font-size: 22px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.partner-box:hover {
+    background: #d9ff6e;
+    transform: scale(1.05);
+}
+
+
+
+/* ================================
+   8. CONTACT SECTION
+   ================================ */
+.contact-section {
+    background: #faf9ef;
+    padding: 100px 0;
+}
+
+.contact-title {
+    font-size: 60px;
+    color: #3a4224;
+}
+
+.contact-input {
+    border: 1px solid #3a4224;
+    padding: 14px;
+    border-radius: 4px;
+}
+
+.contact-btn {
+    background: #d9ff6e;
+    border: 1px solid #3a4224;
+}
+
+.contact-btn:hover {
+    background: #3a4224;
+    color: #fff;
+}
+
+
+
+/* ================================
+   9. FOOTER SECTION
+   ================================ */
+.footer-section {
+    background: #faf9ef;
+    padding: 60px 0;
+    color: #3a4224;
+}
+
+.footer-icon {
+    background: #3a4224;
+    color: white;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.footer-right a {
+    color: #3a4224;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* ================================
+   10. RESPONSIVE STYLES (MOBILE)
+   ================================ */
+@media (max-width: 768px) {
+
+    /* ABOUT MOBILE FIX */
+    .about-left {
+        height: 50vh;
+    }
+    .about-right {
+        padding: 40px 20px;
+        height: auto;
+    }
+
+    /* HERO MOBILE */
+    .hero-section {
+        height: auto;
+    }
+
+    .center-card {
+        width: 70%;
+    }
+
+    /* PARTNERS mobile */
+    .scroll-content {
+        font-size: 22px;
+    }
+
+    /* FOOTER MOBILE */
+    .footer-left,
+    .footer-center,
+    .footer-right {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+
